@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le site de reve d Inacio </title>
+    <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Horloge</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #horloge {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="horloge">00:00:00</div>
+
+  <script>
+    function mettreAJourHorloge() {
+      var maintenant = new Date();
+      var heures = ("0" + maintenant.getHours()).slice(-2);
+      var minutes = ("0" + maintenant.getMinutes()).slice(-2);
+      var secondes = ("0" + maintenant.getSeconds()).slice(-2);
+      document.getElementById('horloge').textContent = heures + ":" + minutes + ":" + secondes;
+    }
+
+    setInterval(mettreAJourHorloge, 1000);
+    mettreAJourHorloge();
+  </script>
+</body>
+</html> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mon site de reve Inacio </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="voyage.html">Mes voyages de rêve</a></li>
+                <li><a href="sneakers.html">Les Sneakers</a></li>
+				<li><a href="music.html">Les musiques</a></li>
+				<li><a href="site-scolaire/index.html">Retour au site scolaire</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bienvenue sur mon site de rêve où vous y retrouverez mes passions pour les Sneakers et les voyages et la musique</h2>
+    </section>
+
+    <footer>
+	    <p>Projet SNT WEB </p>
+	    <p>date de dernière MAJ: 09/03/2026</p>
+        <p> Teixeira Inacio- Mon Site De Rêve</p>
+    </footer>
+
+</body>
+</html>
